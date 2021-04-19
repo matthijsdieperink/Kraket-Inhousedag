@@ -1,0 +1,10 @@
+<html>
+  <body>
+    {% include 'partials/header.html' %}
+
+    <h1>This is the data (# cars: {{ _id - 1}})</h1>
+    {% include 'partials/cardata_table.html' %}
+    <br />
+    {% include 'partials/cardata_form.html' %}
+  </body>
+</html>

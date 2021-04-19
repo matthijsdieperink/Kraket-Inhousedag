@@ -1,0 +1,35 @@
+<htmL>
+  <body>
+    <!--
+      Some comments regarding a table in HTML:
+      - thead = table header;
+      - tbody = table body;
+      - tr = table row;
+      - th = cell in table header;
+      - td = cell in table body;
+    -->
+    <table style="width: 50%;">
+      <thead>
+        <tr>
+          <th style="text-align: left;">ID</th>
+          <th style="text-align: left;">Make</th>
+          <th style="text-align: right;">Listed price</th>
+        </tr>
+      </thead>
+      <tbody>
+        {% for car in data %}
+        <tr style="margin-bottom: 0.5rem;">
+            <td style="text-align: left;">
+              <a href="{{ '/data/%s'%car['ID'] }}">
+                {{ car['ID'] }}
+              </a>
+            </td>
+            <td style="text-align: left;">{{ car['Make'] }}</td>
+            <td style="text-align: right;">{{ car['Listed Price'] }}</td>
+          </a>
+        </tr>
+        {% endfor %}
+      </tbody>
+    </table>
+  </body>
+</htmL>
