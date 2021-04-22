@@ -3,23 +3,19 @@
     <form action="/add_new_data" method="post">
       <div>
         <label for="Make">Make:</label>
-        <input
-          type="text"
-          id="Make"
-          name="Make"
-          placeholder="Make of the car"
-          value="QWER"
-        />
+        <input type="text" name="Make" placeholder="Make" />
       </div>
       <div>
         <label for="Listed Price">Listed price:</label>
-        <input
-          type="number"
-          id="Listed Price"
-          name="Listed Price"
-          placeholder="Price of the car"
-          value="1"
-        />
+        <input type="number" name="Listed Price" placeholder="Price" />
+      </div>
+      <div>
+        <label for="Mileage">Mileage:</label>
+        <select name="Mileage">
+          <option value="sm15.000 km">sm15.000 km</option>
+          <option value="15.000 - 35.000 km">15.000 - 35.000 km</option>
+          <option value="lg35.000 km">lg35.000 km</option>
+        </select>
       </div>
       <input type="submit" value="Submit new car" />
     </form>

@@ -1,0 +1,11 @@
+/* The main.css file imports all other CSS files and their classes
+In the templates/partials/header.html, this file is imported again, such that
+the pages have all CSS classes available.
+
+Note: The templates/partials/header.html files also imports the Bootstrap CSS.
+Bootstrap: https://getbootstrap.com/docs/5.0/getting-started/introduction/
+Bootstrap has a lot of out-of-the-box classes which can be used.
+*/
+
+@import "content.css";
+@import "topnav.css";

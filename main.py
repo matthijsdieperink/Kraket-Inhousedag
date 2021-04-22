@@ -1,7 +1,7 @@
 from flask import Flask, request, redirect, render_template
 import pandas as pd
 
-# Flask
+# Setting up the Flask application
 # https://flask.palletsprojects.com/en/1.1.x/quickstart/
 app = Flask(__name__)
 
@@ -9,7 +9,7 @@ app = Flask(__name__)
 # Read data using Pandas
 # https://pandas.pydata.org/docs/getting_started/intro_tutorials/index.html
 cardata = pd.read_excel('./data/data.xlsx')
-cardata = cardata.iloc[0:10, :]
+cardata = cardata.iloc[0:10, :]  # Get first 10 rows only for now
 cardata = cardata.to_dict(orient='records')
 _id = len(cardata)
 
@@ -26,7 +26,7 @@ def _data():
     return render_template('data.html', data=cardata, _id=_id)
 
 
-# Detail page for one data object
+# Detail page for one data object (a car)
 @ app.route('/data/<id>')
 def _data_id(id):
     car = [c for c in cardata if c['ID'] == int(id)][0]

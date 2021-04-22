@@ -4,8 +4,10 @@
 * Have Python version > 3.7.x installed (we have built this project while using Python 3.9.1, however everything > 3.7.x should most likely work);
 * Have Visual Studio Code or any other Integraded Developer Environment (IDE) installed;
 
+Note: If `pip install XYZ` does not work for Python 3, use `pip3 install XYZ`.
+
 ## Setting up a virtual environment
-Type in your terminal the following command(s) (note, the $ shouldn't be in the command, it's just indicating a new line/command & if pip install doesn't work, use pip3 install instead):
+Type in your terminal the following command(s) (note, the $ shouldn't be in the command, it's just indicating a new line/command):
 ```
 $ pip install virtualenv
 $ virtualenv venv
@@ -20,7 +22,7 @@ $ deactivate
 ```
 
 ## Install dependencies
-Type in your terminal the following command(s) (note, the $ shouldn't be in the command, it's just indicating a new line/command & if pip install doesn't work, use pip3 install instead):
+Type in your terminal the following command(s) (note, the $ shouldn't be in the command, it's just indicating a new line/command):
 ```
 $ pip install -r requirements.txt
 ```

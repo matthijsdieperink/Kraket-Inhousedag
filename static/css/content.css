@@ -1,0 +1,22 @@
+/* https://www.w3schools.com/css/css_padding.asp */
+.content-wrapper {
+  padding: 1rem 2rem;
+}
+
+/* https://www.w3schools.com/css/css3_flexbox.asp */
+.flex-container {
+  display: flex;
+}
+
+.flex-spacearound {
+  justify-content: space-around;
+}
+
+.width-full {
+  width: 100%;
+}
+
+/* https://www.w3schools.com/css/css_margin.asp. vh = view height */
+.home-images {
+  margin-top: 30vh;
+}

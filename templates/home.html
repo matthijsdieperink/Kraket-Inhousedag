@@ -1,6 +1,18 @@
 <html>
   <body>
     {% include 'partials/header.html' %}
-    <h1>This is the homepage</h1>
+
+    <div class="content-wrapper">
+      <h1>This is the homepage</h1>
+      <div class="flex-container flex-spacearound width-full home-images">
+        <img src="static/images/logo_kraket.png" height="150" />
+        <!-- To align images, use margin-top. It's ugly, but it works :-) -->
+        <img
+          src="static/images/logo_finaps.png"
+          height="150"
+          style="margin-top: 30px"
+        />
+      </div>
+    </div>
   </body>
 </html>
