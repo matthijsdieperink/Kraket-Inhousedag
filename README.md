@@ -5,7 +5,7 @@
 * Have Visual Studio Code or any other Integraded Developer Environment (IDE) installed;
 
 ## Setting up a virtual environment
-Type in your terminal the following command(s) (note, the $ shouldn't be in the command, it's just indicating a new line/command):
+Type in your terminal the following command(s) (note, the $ shouldn't be in the command, it's just indicating a new line/command & if pip install doesn't work, use pip3 install instead):
 ```
 $ pip install virtualenv
 $ virtualenv venv
@@ -20,7 +20,7 @@ $ deactivate
 ```
 
 ## Install dependencies
-Type in your terminal the following command(s) (note, the $ shouldn't be in the command, it's just indicating a new line/command):
+Type in your terminal the following command(s) (note, the $ shouldn't be in the command, it's just indicating a new line/command & if pip install doesn't work, use pip3 install instead):
 ```
 $ pip install -r requirements.txt
 ```

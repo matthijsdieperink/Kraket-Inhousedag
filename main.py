@@ -9,9 +9,9 @@ app = Flask(__name__)
 # Read data using Pandas
 # https://pandas.pydata.org/docs/getting_started/intro_tutorials/index.html
 cardata = pd.read_excel('./data/data.xlsx')
-cardata = cardata.iloc[1:10, :]
+cardata = cardata.iloc[0:10, :]
 cardata = cardata.to_dict(orient='records')
-_id = len(cardata) + 1
+_id = len(cardata)
 
 
 # Homepage
