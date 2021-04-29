@@ -1,14 +1,24 @@
 <html>
   <body>
+    <!-- The action on the form triggers the action on line 38 of the main.py file, right? -->
     <form action="/add_new_data" method="post">
+
+       <!-- The field for inputting the listed price, which is of type text -->
       <div>
         <label for="Make">Make:</label>
         <input type="text" name="Make" placeholder="Make" />
       </div>
+
+      <!-- The field for inputting the listed price, which is of type number -->
       <div>
         <label for="Listed Price">Listed price:</label>
         <input type="number" name="Listed Price" placeholder="Price" />
       </div>
+
+      <!-- 
+        The dropdown for selecting mileage of your car, each "< option />" element is an option you can select in the form 
+        Question for Thijs: Do the options need to correspond to the data in excel?
+      -->
       <div>
         <label for="Mileage">Mileage:</label>
         <select name="Mileage">

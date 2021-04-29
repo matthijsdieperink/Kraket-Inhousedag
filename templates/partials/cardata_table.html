@@ -22,7 +22,7 @@
         {% for car in data %}
         <tr>
             <td style="text-align: left;">
-              <a href="{{ '/data/%s'%car['ID'] }}">{{ car['ID'] }}</a>
+              <a href="{{ '/data/%s'%car['ID'] }}">{{ car['ID'] }}</a> <!-- This is the way to make the link for a field -->
             </td>
             <td style="text-align: left;">{{ car['Make'] }}</td>
             <td style="text-align: right;">{{ car['Listed Price'] }}</td>
