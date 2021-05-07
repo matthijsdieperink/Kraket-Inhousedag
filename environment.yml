@@ -1,0 +1,9 @@
+name: kraket_inhousedag
+channels:
+  - conda-forge
+dependencies:
+  - flask
+  - numpy
+  - pandas
+  - matplotlib
+  - sklearn

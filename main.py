@@ -6,7 +6,7 @@ import pandas as pd
 app = Flask(__name__)
 
 
-# Read data using Pandas, get the first 10 rows and change the imported
+# Read data using Pandas, get the first 10 rows and convert the imported
 # dataframe object to a python dictionary
 # Pandas: https://pandas.pydata.org/docs/getting_started/intro_tutorials/index.html
 # Dictionary: https://www.w3schools.com/python/python_dictionaries.asp
@@ -41,7 +41,7 @@ def _data_id(id):
     return f"This is car #{car['ID']}. Be creative :-)"
 
 
-# POST request to add new data item
+# HTTP POST request to add new data item
 # To read more about POST requests: https://en.wikipedia.org/wiki/POST_(HTTP)
 @ app.route('/add_new_data', methods=["POST"])
 def _add_new_data():
