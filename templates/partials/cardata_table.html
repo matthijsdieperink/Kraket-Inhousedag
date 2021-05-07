@@ -8,9 +8,10 @@
       - th = cell in table header;
       - td = cell in table body;
     -->
-    <table class="table"> <!-- This class is a "Bootstrap" class! -->
+    <table class="table"> <!-- This class is a "Bootstrap" class! https://www.w3schools.com/bootstrap/bootstrap_ref_all_classes.asp -->
       <thead>
         <tr>
+          <!--Some inline styling: https://www.codecademy.com/articles/html-inline-styles-->
           <th style="text-align: left;">ID</th>
           <th style="text-align: left;">Make</th>
           <th style="text-align: right;">Listed price</th>
@@ -19,9 +20,11 @@
         </tr>
       </thead>
       <tbody>
+        <!--This is the wat to make a for loop in html-->
         {% for car in data %}
         <tr>
             <td style="text-align: left;">
+              <!--This is the way to make the link for a field-->
               <a href="{{ '/data/%s'%car['ID'] }}">{{ car['ID'] }}</a>
             </td>
             <td style="text-align: left;">{{ car['Make'] }}</td>
@@ -30,6 +33,7 @@
             <td style="text-align: right;">{{ car['Total claim'] }}</td>
           </a>
         </tr>
+        <!--End of the for loop-->
         {% endfor %}
       </tbody>
     </table>

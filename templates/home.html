@@ -1,9 +1,15 @@
+<!--This is the home html page which displays the home screen of the application
+  For the basics of html, refer to: https://www.w3schools.com/html/html_intro.asp
+-->
+
 <html>
   <body>
+    <!--The html file 'header' in the folder 'partials' is imported here-->
     {% include 'partials/header.html' %}
 
     <div class="content-wrapper">
       <h1>This is the homepage</h1>
+      <!--Display the images on the page with the <img tag-->
       <div class="flex-container flex-spacearound width-full home-images">
         <img src="static/images/logo_kraket.png" height="150" />
         <!-- To align images, use margin-top. It's ugly, but it works :-) -->
