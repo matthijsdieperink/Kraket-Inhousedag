@@ -7,11 +7,20 @@
 Note: If `pip install XYZ` does not work for Python 3, use `pip3 install XYZ`.
 
 ## Setting up a virtual environment
-Type in your terminal the following command(s) (note, the $ shouldn't be in the command, it's just indicating a new line/command):
+Type in your terminal (Mac) or in the Command Prompt (Windows) the following command(s) (note, the $ shouldn't be in the command, it's just indicating a new line/command):
+Mac:
 ```
 $ pip install virtualenv
 $ virtualenv venv
 $ source venv/bin/activate
+```
+
+Windows:
+```
+$ py -m pip install –upgrade pip
+$ py -m install –user virtualenv
+$ py -m venv <name venv>
+$ .\<name venv>\Scripts\activate
 ```
 
 This will activate your virtual environment. It's useful to work in a virtual environment due to how Python handles dependencies for projects. This will encapsulate your dependencies within this virual environment and will not mess up other projects with dependencies.
