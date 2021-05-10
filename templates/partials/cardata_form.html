@@ -1,6 +1,8 @@
 <html>
   <body>
+    <!--The action on this form triggers the def on line 46 in main.py-->
     <form action="/add_new_data" method="post">
+      <!--Below input fields are created for 'Make', 'Listed Price' and 'Milage'-->
       <div>
         <label for="Make">Make:</label>
         <input type="text" name="Make" placeholder="Make" />
@@ -12,6 +14,7 @@
       <div>
         <label for="Mileage">Mileage:</label>
         <select name="Mileage">
+          <!--The options are the dropdown values you can choose from-->
           <option value="sm15.000 km">sm15.000 km</option>
           <option value="15.000 - 35.000 km">15.000 - 35.000 km</option>
           <option value="lg35.000 km">lg35.000 km</option>

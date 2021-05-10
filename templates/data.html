@@ -1,7 +1,9 @@
 <html>
   <body>
+    <!--The html file 'header' in the folder 'partials' is imported here-->
     {% include 'partials/header.html' %}
 
+    <!--The css class is imported from the css file '/static/css/content.css'-->
     <div class="content-wrapper">
       <h1>This is the data (# cars: {{ _id }})</h1>
       {% include 'partials/cardata_table.html' %}
