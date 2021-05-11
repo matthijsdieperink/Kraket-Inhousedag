@@ -17,16 +17,26 @@ Now there are two options, from which you only need to choose one: either PIP+vi
 This option uses PIP as a package manager and the virtualenv package as an environment manager.
 
 1. For this option to work you need the `PIP` package, which is used to install Python packages. Please make sure the `pip` command is available in your terminal.
-2. Open a terminal and navigate to the repo folder by using the following command `$ cd path/to/repo` (omit `$` from your actual command).
-3. Type in your terminal the following command(s) (note, the `$` shouldn't be in the command, it's just indicating a new line/command):
+2. Open a terminal (Mac) or the Command Prompt (Windows) and navigate to the repo folder by using the following command `$ cd path/to/repo` (omit `$` from your actual command).
+3. Type in your terminal or Command Prompt the following command(s) (note, the `$` shouldn't be in the command, it's just indicating a new line/command).
+
+Mac:
 ```
 $ pip install virtualenv
 $ virtualenv venv
 $ source venv/bin/activate
 ```
+
+Windows:
+```
+$ py -m pip install –upgrade pip
+$ py -m install –user virtualenv
+$ py -m venv <name_virtualenv>
+$ .\<name_virtualenv>\Scripts\activate
+```
 Note: If `pip install XYZ` does not work for Python 3, use `pip3 install XYZ`.
 
-These commands will install the `virtualenv` package, create a new virtual environment with the right packages and activate it. 
+These commands will install the `virtualenv` package, create a new virtual environment with the right packages and activate it.
 
 To deactivate the virtual environment, type in your terminal:
 ```

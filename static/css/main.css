@@ -7,7 +7,7 @@ Bootstrap: https://getbootstrap.com/docs/5.0/getting-started/introduction/
 Bootstrap has a lot of out-of-the-box classes which can be used.
 
 Feel free to write your own css classes in the files ('content.css' and 'topnav.css')
-that are imported below or create your own css file (don't forget to import it here).
+which are imported below. Or create your own css file (don't forget to import it here).
 */
 
 @import "content.css";
